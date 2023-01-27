@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,164 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#nav {
+  background-color: aqua;
+  padding: 10px 20px;
+  width: 100%;
+  min-width: 500px;
+}
+
+#nav ul {
+  list-style: none;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+a{
+  text-decoration: none;
+  color: black;
+
+}
+
+#nav ul li a {
+  font-weight: 600;
+}
+
+
+
+.create-post-container {
+  width: 60%;
+  min-width: 500px;
+  margin: auto;
+  padding: 20px;
+
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.create-post-container h3 {
+  padding-bottom: 10px;
+}
+
+.create-post-container form {
+  width: 100%;
+  height: 100%;
+
+}
+
+.create-post-container form div {
+
+  padding: 10px;
+}
+
+.create-post-container form div label {
+  display: block;
+  padding-bottom: 3px;
+}
+
+.create-post-container form div input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.create-post-container form div:nth-child(3) {
+  height: calc(100% - 235px);
+}
+
+.create-post-container form div textarea {
+  width: 100%;
+  height: 93%;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.btn {
+  padding: 10px;
+  background-color: rgb(67, 186, 8);
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+
+
+}
+
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+/*************************************Home**********************************/
+.parent-container {
+  width: 70%;
+  min-width: 600px;
+  margin: auto;
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.parent-container h1 {
+  text-align: center;
+  padding: 5px;
+  color: rgb(10, 96, 96);
+}
+
+
+.parent-container ul {
+  list-style: none;
+  margin-top: 10px;
+
+}
+
+.parent-container ul li {
+
+  border-radius: 5px;
+  margin-top: 5px;
+  border: 1px solid grey;
+}
+
+.parent-container h2,
+h3 {
+  text-align: center;
+  color:rgb(89, 89, 231);
+}
+
+.parent-container ul li h3{
+  font-style: italic;
+}
+
+.parent-container ul li p {
+  padding: 10px;
+  line-height: 1.6rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-height: 93px;
+}
+
+.parent-container div p{
+  line-height: 1.6rem;
+  font-size: 18px;
+}
+
+.parent-container ul li div{
+  width: 60%;
+  min-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px;
 }
